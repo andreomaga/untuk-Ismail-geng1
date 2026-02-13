@@ -1,1 +1,192 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>VALENTINE • ISMAIL GENG</title>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS EKSTERNAL -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+    <!-- FLOATING BUBBLES CONTAINER -->
+    <div id="bubble-container"></div>
+    
+    <div class="container">
+        <!-- HEADER -->
+        <header>
+            <div class="logo">
+                <i class="fas fa-handshake"></i> ISMAIL GENG
+            </div>
+            <div class="theme-toggle" id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+        </header>
+        
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <h1 class="fade-in">
+                HAPPY <span>VALENTINE</span><br>
+                DAY, <span>GUYS!</span>
+            </h1>
+            <p class="fade-in" style="animation-delay: 0.2s;">
+                Bukan buat pacar, ini buat kalian • Ismail Geng forever
+            </p>
+            <div class="btn-group fade-in" style="animation-delay: 0.4s;">
+                <button class="btn" id="play-music-btn">
+                    <i class="fas fa-headphones-alt"></i> Putar Lagu
+                </button>
+                <button class="btn btn-outline" id="scroll-btn">
+                    <i class="fas fa-images"></i> Lihat Foto
+                </button>
+            </div>
+        </section>
+        
+        <!-- PHOTO SLIDER: 3 FOTO DENGAN 3 KATA BERBEDA -->
+        <section class="photo-section">
+            <h2 class="section-title fade-in">📸 DOKUMENTASI</h2>
+            <div class="section-sub fade-in" style="animation-delay: 0.1s;">3 FOTO • 3 CERITA • 1 GENG</div>
+            
+            <div class="slider-container fade-in" style="animation-delay: 0.2s;">
+                <div class="slider" id="slider">
+                    
+                    <!-- FOTO 1 -->
+                    <div class="slide">
+                        <div class="filename-badge">📁 FOTO 1 DISINI.JPG</div>
+                        <img src="assets/images/foto1.jpg" alt="Ismail Geng">
+                        <div class="slide-overlay">
+                            <span class="photo-label">📌 PESAN UNTUK KALIAN</span>
+                            <div class="slide-caption">
+                                happy valentine day guys!! maaf kalau terkesan nya aneh dan alay sampai bikin web gini. tapi inilah tanda kalau aku menganggap kalian sebagai orang yang spesial. jangan asing yaa ismail geng, jangan lupa juga buat balik bulan Desember yang sama di luar tungkal ❤️
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FOTO 2 -->
+                    <div class="slide">
+                        <div class="filename-badge">📁 FOTO 2 DISINI.JPG</div>
+                        <img src="assets/images/foto2.jpg" alt="Bersama-sama">
+                        <div class="slide-overlay">
+                            <span class="photo-label">💬 KATA UNTUK FOTO 2</span>
+                            <div class="slide-caption">
+                                dulu kita ketemu, tapi nanti sibuk masing-masing. tapi tau ga? setiap kali denger lagu yang dulu sering kita puter bareng, rasanya kayak baru kemarin. makanya jangan pada ilang, ye. kita masih punya banyak cerita yang belum selesai.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FOTO 3 -->
+                    <div class="slide">
+                        <div class="filename-badge">📁 FOTO 3 DISINI.JPG</div>
+                        <img src="assets/images/foto3.jpg" alt="Kebersamaan">
+                        <div class="slide-overlay">
+                            <span class="photo-label">💬 KATA UNTUK FOTO 3</span>
+                            <div class="slide-caption">
+                                desember nanti kita kumpul lagi ya. duduk lama, ngobrol ngalor ngidul kayak dulu. karena sejauh apapun kita pergi, tungkal dan ismail geng bakal jadi tempat pulang yang paling bikin adem.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- SLIDER BUTTONS -->
+                <div class="slider-btn prev" id="prev-slide">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="slider-btn next" id="next-slide">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+            
+            <!-- DOTS INDICATOR -->
+            <div class="dots" id="dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+        
+        <!-- TIGA KATA UNTUK ISMAIL GENG -->
+        <section>
+            <h2 class="section-title fade-in">🤝 3 HAL</h2>
+            <div class="friendship-words">
+                <div class="friend-card fade-in" style="animation-delay: 0.1s;">
+                    <div class="friend-icon">⏳</div>
+                    <div class="friend-name">WAKTU</div>
+                    <p>Dulu kita nongki sampe kemaleman, sekarang nongki sampe lupa kalo nanti udah beda sekolah. yang berubah cuma lokasinya, bukan kita.</p>
+                </div>
+                <div class="friend-card fade-in" style="animation-delay: 0.2s;">
+                    <div class="friend-icon">🗺️</div>
+                    <div class="friend-name">JARAK</div>
+                    <p>Dari tungkal ke mana pun kalian pergi, group chat ini tetep rumah. yang jauh cuma badan, hati mah tetep nempel.</p>
+                </div>
+                <div class="friend-card fade-in" style="animation-delay: 0.3s;">
+                    <div class="friend-icon">🤙</div>
+                    <div class="friend-name">GENG</div>
+                    <p>ismail geng bukan cuma nama. ini alasan kenapa kita masih keep in touch sampe sekarang. kalian alasan aku tersenyum 🥹🥹</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- PESAN TERAKHIR -->
+        <section>
+            <div class="message-card fade-in">
+                <div class="message-content">
+                    <i class="fas fa-quote-left" style="opacity: 0.3; font-size: 1.8rem; margin-right: 8px;"></i>
+                    maaf kalo webnya alay. aku juga ngga nyangka bisa segila ini cuma buat valentine-an sama tongkrongan. tapi yaudah lah ya, sekali-kali. intinya: <strong>terima kasih udah jadi tempat pulang yang ngga pernah nutup pintu</strong>. aku tunggu kalian balik desember.
+                    <i class="fas fa-quote-right" style="opacity: 0.3; font-size: 1.8rem; margin-left: 8px;"></i>
+                </div>
+                <div class="signature">
+                    — dari salah satu yang rindu
+                </div>
+            </div>
+        </section>
+        
+        <!-- FOOTER -->
+        <footer>
+            <p>🫶 khusus untuk ismail geng, di mana pun kalian berada</p>
+            <p>•</p>
+        </footer>
+    </div>
+    
+    <!-- MUSIC PLAYER FLOATING -->
+    <div class="music-player" id="music-player">
+        <div class="music-info">
+            <div class="album-art">
+                <i class="fas fa-users"></i>
+            </div>
+            <div class="song-details">
+                <div class="song-title">KITA KE SANA</div>
+                <div class="song-artist">Hindia •</div>
+            </div>
+        </div>
+        <div class="progress-bar" id="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+        <div class="controls">
+            <div class="control-btn" id="prev-song">
+                <i class="fas fa-backward"></i>
+            </div>
+            <div class="control-btn play-btn" id="play-pause">
+                <i class="fas fa-play" id="play-icon"></i>
+            </div>
+            <div class="control-btn" id="next-song">
+                <i class="fas fa-forward"></i>
+            </div>
+            <div class="control-btn" id="close-player">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <audio id="audio" loop>
+            <source src="assets/audio/lagu-persahabatan.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    
+    <!-- JAVASCRIPT EKSTERNAL -->
+    <script src="script.js"></script>
+</body>
+  </html>
